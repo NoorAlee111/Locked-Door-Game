@@ -1,0 +1,17 @@
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.Properties.Resources.resources
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\bin\Debug\LockedDoor.exe.config
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\bin\Debug\LockedDoor.exe
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\bin\Debug\LockedDoor.pdb
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\bin\Debug\EZInput.dll
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\bin\Debug\EZInput.xml
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.csproj.CopyComplete
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.exe
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.pdb
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.Level2.resources
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.Level1.resources
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.StartGame.resources
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.End.resources
+C:\Users\DELL\source\repos\LockedDoor\LockedDoor\obj\Debug\LockedDoor.LevelChange.resources

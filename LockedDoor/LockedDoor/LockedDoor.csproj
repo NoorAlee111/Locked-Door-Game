@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01C40C0F-A5E0-4AB0-9BF0-FCCC9F18437A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LockedDoor</RootNamespace>
+    <AssemblyName>LockedDoor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EZInput, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="End.Designer.cs">
+      <DependentUpon>End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelChange.Designer.cs">
+      <DependentUpon>LevelChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartGame.Designer.cs">
+      <DependentUpon>StartGame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="End.resx">
+      <DependentUpon>End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelChange.resx">
+      <DependentUpon>LevelChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartGame.resx">
+      <DependentUpon>StartGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\bullet.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\door.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\enemies.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\jungle.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\key.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\player.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\wall.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\player.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\laserGreen05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\laserGreen09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\snake2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\doorLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\shooterenemey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\laserRed07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\chaser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Icons_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\empty-background-with-jungle-tree-elements-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\energizer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\hand-made-wall-brick-grunge-texture-game-art-design-project-cgi-concept-hand-made-wall-brick-grunge-texture-background-243586884.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\level1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\win.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\Fire5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\levelll2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\309.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\BG_Decor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\Cartoon_Forest_BG_03.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
